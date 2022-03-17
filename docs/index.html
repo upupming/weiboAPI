@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <title>weiboAPI</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/raycon/vscode-markdown-style/preview/dark-material.css">
+        
+    </head>
+    <body>
+        <h1 id="weiboAPI">weiboAPI</h1>
+<p>搜集微博 API，详情请见下面的示例。</p>
+<script src='https://cdn.jsdelivr.net/gh/upupming/weiboAPI@a5de545b607837d4c2793eb6e6e085ea9d361807/response.js'></script>
+<h2 id="userInfo">userInfo</h2>
+<p><code>https://m.weibo.cn/api/container/getIndex?type=uid&amp;value=1669879400</code></p>
+<div id="userInfo"></div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/renderjson@1.4.0/renderjson.js"></script>
+<script>
+    renderjson.set_show_to_level(2);
+    document.getElementById("userInfo").appendChild(
+        renderjson(userInfo)
+    );
+</script>
+<h2 id="cards">cards</h2>
+<p><code>https://m.weibo.cn/api/container/getIndex?type=uid&amp;value=1669879400&amp;containerid=1076031669879400</code></p>
+<div id="cards1"></div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/renderjson@1.4.0/renderjson.js"></script>
+<script>
+    renderjson.set_show_to_level(2);
+    document.getElementById("cards1").appendChild(
+        renderjson(cards1)
+    );
+</script>
+<h2 id="statuses">statuses</h2>
+<p><code>https://m.weibo.cn/statuses/extend?id=4383487819465288</code></p>
+<div id="status1dd"></div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/renderjson@1.4.0/renderjson.js"></script>
+<script>
+    renderjson.set_show_to_level(2);
+    document.getElementById("status1dd").appendChild(
+        renderjson(statuses1)
+    );
+</script>
+<h2 id="retweet">retweet</h2>
+<p><code>https://m.weibo.cn/statuses/show?id=HyZVegYAP</code></p>
+<div id="retweet01"></div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/renderjson@1.4.0/renderjson.js"></script>
+<script>
+    renderjson.set_show_to_level(2);
+    document.getElementById("retweet01").appendChild(
+        renderjson(retweet01)
+    );
+</script>
+<h2 id="comments1">comments1</h2>
+<p><code>https://m.weibo.cn/api/comments/show?id=4383183661430868&amp;page=1</code></p>
+<div id="comments1dd"></div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/renderjson@1.4.0/renderjson.js"></script>
+<script>
+    renderjson.set_show_to_level(2);
+    document.getElementById("comments1dd").appendChild(
+        renderjson(comments1)
+    );
+</script>
+<h2 id="comments2">comments2</h2>
+<p><code>https://m.weibo.cn/comments/hotflow?id=4383183661430868&amp;mid=4383183661430868&amp;max_id_type=0</code></p>
+<div id="comments2dd"></div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/renderjson@1.4.0/renderjson.js"></script>
+<script>
+    renderjson.set_show_to_level(2);
+    document.getElementById("comments2dd").appendChild(
+        renderjson(comments2)
+    );
+</script>
+
+    </body>
+    </html>
